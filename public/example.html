@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Học Web Chuẩn - Template</title>
+        <link href="css/style.css" rel="stylesheet" media="all" />
+        <style>
+            /* Reset lại một vài thuộc tính */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            ol,
+            ul {
+                list-style: none;
+            }
+
+            img {
+                border: none;
+                vertical-align: top;
+            }
+
+            /* Nội dung layout */
+            #layout {
+                margin: 20px auto;
+                width: 1024px;
+            }
+            header,
+            footer,
+            #content,
+            aside,
+            .box-list li {
+                font-size: 30px;
+                text-align: center;
+            }
+            header {
+                background-color: #92dfc8;
+                height: 80px;
+                line-height: 80px;
+            }
+            main {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #content {
+                background-color: #caeff2;
+                height: 400px;
+                line-height: 400px;
+                width: 774px;
+            }
+            aside {
+                background-color: #f2d8ca;
+                height: 400px;
+                line-height: 400px;
+                width: 250px;
+            }
+            .box-list {
+                display: flex;
+                margin-top: 10px;
+            }
+            .box-list li {
+                background-color: #f2f1ca;
+                height: 150px;
+                line-height: 150px;
+                text-align: center;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                width: 248.5px;
+            }
+            .box-list li:last-child {
+                margin-right: 0;
+            }
+            footer {
+                background-color: #eecbf3;
+                height: 80px;
+                line-height: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="layout">
+            <header>HEADER</header>
+
+            <main>
+                <section id="content">
+                    CONTENT
+                </section>
+
+                <aside>
+                    ASIDE
+                </aside>
+
+                <ul class="box-list">
+                    <li>Box 1</li>
+                    <li>Box 2</li>
+                    <li>Box 3</li>
+                    <li>Box 4</li>
+                </ul>
+            </main>
+
+            <footer>FOOTER</footer>
+            <!-- / id layout -->
+        </div>
+    </body>
+</html>
