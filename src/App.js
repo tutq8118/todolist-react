@@ -18,12 +18,16 @@ class App extends Component {
             todoItems: allNewTask,
             filterMode: "all"
         };
+        this.inputItem = React.createRef();
         this.onItemClicked = this.onItemClicked.bind(this);
         this.onKeyUp = this.onKeyUp.bind(this);
         this.onChange = this.onChange.bind(this);
         this.onCheckAll = this.onCheckAll.bind(this);
         this.onClearCompleted = this.onClearCompleted.bind(this);
         this.onFilter = this.onFilter.bind(this);
+    }
+    componentDidMount() {
+        this.inputItem.current.focus();
     }
     onItemClicked(item) {
         const { todoItems } = this.state;
@@ -232,6 +236,7 @@ class App extends Component {
                         value={newItem}
                         onChange={this.onChange}
                         onKeyUp={this.onKeyUp}
+                        ref={this.inputItem}
                     />
                 </div>
                 {todoItems.length > 0 &&
