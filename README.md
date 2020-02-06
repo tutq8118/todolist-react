@@ -1,5 +1,5 @@
 **DEMO:**
-[https://tutq-todolist-react.netlify.com/] (https://tutq-todolist-react.netlify.com/)
+[https://tutq-todolist-react.netlify.com/](https://tutq-todolist-react.netlify.com/)
 
 ##
 
